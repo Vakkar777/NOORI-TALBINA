@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noori Talbina - The Prophetic Healing Porridge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #C6A769;
+            --olive: #808000;
+            --cream: #FFF8E7;
+            --earth: #4A3120;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--earth);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(74, 49, 32, 0.8), rgba(74, 49, 32, 0.8)),
+                        url('talbina-banner.jpg') center/cover;
+            color: white;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+
+        .quote {
+            font-family: 'Amiri', serif;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            color: var(--olive);
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            width: 2px;
+            height: 100%;
+            background: var(--gold);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--olive);
+            border: 3px solid var(--gold);
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hadith-box {
+            background: var(--cream);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 style="font-family: 'Amiri', serif; font-size: 3rem;">نوري طلبينة<br>Noori Talbina</h1>
+        <p>The Ancient Healing Elixir from Tibb-e-Nabawi</p>
+    </header>
+
+    <main class="container">
+        <!-- Historical Section -->
+        <section class="hadith-box">
+            <div class="quote">
+                "Talbina gives rest to the heart of the patient and makes it active."
+                <br>- Sahih al-Bukhari 5689
+            </div>
+            <p>Talbina, derived from the Arabic word "Laban" (milk), is a soothing barley concoction revered in Islamic medicine. Traditionally prepared with barley flour, water, and honey, this nutrient-dense porridge has been used for centuries as both food and medicine.</p>
+        </section>
+
+        <!-- Health Benefits Grid -->
+        <section class="benefits-grid">
+            <div class="benefit-card">
+                <i class="icon fas fa-heartbeat"></i>
+                <h3>Cardiac Care</h3>
+                <p>Rich in beta-glucans to lower cholesterol and support heart health</p>
+            </div>
+            <div class="benefit-card">
+                <i class="icon fas fa-brain"></i>
+                <h3>Mental Wellness</h3>
+                <p>Contains tryptophan to boost serotonin and reduce anxiety</p>
+            </div>
+            <div class="benefit-card">
+                <i class="icon fas fa-bone"></i>
+                <h3>Bone Health</h3>
+                <p>High in calcium, magnesium, and phosphorus content</p>
+            </div>
+        </section>
+
+        <!-- Historical Timeline -->
+        <section class="timeline">
+            <h2>Through the Ages</h2>
+            <div class="timeline-item">
+                <h3>Pre-Islamic Era</h3>
+                <p>Barley cultivation in Fertile Crescent</p>
+            </div>
+            <div class="timeline-item">
+                <h3>7th Century</h3>
+                <p>Prophetic recommendation in Hadith literature</p>
+            </div>
+            <div class="timeline-item">
+                <h3>10th Century</h3>
+                <p>Detailed in Ibn Sina's medical texts</p>
+            </div>
+        </section>
+
+        <!-- Recipe Card -->
+        <article class="recipe-card">
+            <h2><i class="fas fa-mortar-pestle"></i> Traditional Preparation</h2>
+            <div class="ingredients">
+                <h3>Sacred Ingredients:</h3>
+                <ul>
+                    <li>🌾 1 cup organic barley flour</li>
+                    <li>💧 5 cups pure water</li>
+                    <li>🍯 Raw honey (to taste)</li>
+                    <li>🌹 Rose petals (optional)</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Alchemical Process:</h3>
+                <ol>
+                    <li>Mix barley flour with cold water</li>
+                    <li>Simmer on low heat 30-45 minutes</li>
+                    <li>Stir continuously clockwise</li>
+                    <li>Add honey when slightly cooled</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Nutritional Comparison -->
+        <section class="nutrition-comparison">
+            <h2>Nutritional Superiority</h2>
+            <div class="comparison-chart">
+                <!-- Add chart using CSS grid or SVG -->
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--earth); color: white; text-align: center; padding: 2rem;">
+        <p>📜 Preserving Ancient Wisdom for Modern Wellness 📜</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fas fa-share-alt"></i>
+        </div>
+    </footer>
+</body>
+</html>
