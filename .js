@@ -70,3 +70,33 @@
     </script>
 </body>
 </html>
+<script>
+    // Add to Cart functionality
+    function addToCart(product) {
+        console.log(`Added ${product} to cart`);
+        alert(`Added ${product} to cart!`);
+    }
+
+    // Download handler
+    function downloadRecipe() {
+        console.log('Downloading recipe...');
+        alert('Download started!');
+    }
+
+    // Initialize all interactive elements
+    document.addEventListener('DOMContentLoaded', () => {
+        // Cart buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.closest('.product-card').querySelector('h3').textContent;
+                addToCart(product);
+            });
+        });
+
+        // Download button
+        document.querySelector('.download-button').addEventListener('click', downloadRecipe);
+    });
+</script>
+<button class="cta-button download-button pulse">
+    <i class="fas fa-download"></i> Download Sacred Recipe Book
+</button>
